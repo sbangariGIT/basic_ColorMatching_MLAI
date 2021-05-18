@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+        Black or White AI
+        </title>
+        <script src="//unpkg.com/brain.js" defer></script>
+        <script src="script.js" defer></script>
+        <style>
+        /* Style script */
+        *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        text-decoration: none;
+        }
+        .navbar{
+        width: 100%;
+        padding: 15px 0px;
+        background: yellowgreen;
+        }
+        .navbar .logo{
+        padding-left: 10px;
+        color: white;
+        font-size: 35px;
+        font-weight: 600;
+        }
+        .home{
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            justify-content: center;
+        }
+        .sandbox{
+            height: 300px;
+            width: 300px;
+            border: 2px solid black;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            justify-content: center;
+        }
+        .prompt{
+            padding-top: 10px;
+        }
+        .white{
+            color: white;
+        }
+        .buttons{
+            padding-top: 10px;
+        }
+        #network-img{
+            padding-top: 10px;
+            display: flex;
+            justify-content: center;
+        }
+        .heading{
+            padding-top: 30px;
+            display: flex;
+            justify-content: center; 
+        }
+        h1{
+            padding-top: 20px;
+        }
+        </style>
+    </head>
+    <body>
+        <nav>
+            <div class="navbar">
+                <div class="logo">SRB Projects</div>
+            </div>
+        </nav>
+        <div class="home">
+            <h1>Teach the color bot</h1>
+            <div id="sandbox" class="sandbox">
+                <div class="white">TEXT WHEN IT IS WHITE</div>
+                <div class="black">TEXT WHEN IT IS BLACK</div>
+                <div class="guess" id="guess">COLOR WHAT AI GUESSED</div>
+            </div>
+            <div class="prompt">Which color looks good on this background?</div>
+            <div class="buttons">
+                <button id="white">white</button>
+                <button id="black">black</button>
+            </div>
+            <div class="heading">Neural Network Diagram</div>
+            <div id="network-img"></div>
+        </div>
+    </body>
+</html>
